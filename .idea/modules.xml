@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyWeb.iml" filepath="$PROJECT_DIR$/MyWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XML_Tomcat/XML_Tomcat.iml" filepath="$PROJECT_DIR$/XML_Tomcat/XML_Tomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/book_static/book_static.iml" filepath="$PROJECT_DIR$/book_static/book_static.iml" />
     </modules>
   </component>

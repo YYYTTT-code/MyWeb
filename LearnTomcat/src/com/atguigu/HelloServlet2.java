@@ -13,6 +13,7 @@ public class HelloServlet2 extends HttpServlet {
         System.out.println("get被执行");
         String name=req.getParameter("name");
         String password = req.getParameter("password");
+        req.setAttribute("key1","value1");
         System.out.println(name+password);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/IDEA_auto_make");
         requestDispatcher.forward(req,resp);

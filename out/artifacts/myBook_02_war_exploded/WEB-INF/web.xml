@@ -7,6 +7,14 @@
         <servlet-name>RegistServlet</servlet-name>
         <servlet-class>com.atguigu.web.RegistServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>fileServlet</servlet-name>
+        <servlet-class>com.atguigu.web.fileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fileServlet</servlet-name>
+        <url-pattern>/fileServlet</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegistServlet</servlet-name>
         <url-pattern>/regist</url-pattern>

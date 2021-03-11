@@ -7,9 +7,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -18,6 +16,16 @@ public class fileServlet extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //学习 cookie
+        Cookie cookie=new Cookie("key1","value158");
+        cookie.setMaxAge(-1);
+        response.addCookie(cookie);
+
+        //学习session
+        HttpSession session = request.getSession();
+        System.out.println(session.getId());
+        System.out.println(session.isNew());
+
         System.out.println("文件上传学习:");
         request.setCharacterEncoding("UTF-8");
         if(ServletFileUpload.isMultipartContent(request)){

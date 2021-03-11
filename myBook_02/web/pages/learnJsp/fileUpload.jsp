@@ -12,7 +12,7 @@
 </head>
 <body>
 <form method="post" action="http://localhost:8080/myBook_02/fileServlet" enctype="multipart/form-data">
-    名字<input type="text" name="name"/><br>
+    名字<input type="text" name="name" value="${cookie.key1.value}"/><br>
     上传<input type="file" name="photo"/><br>
     <input type="submit">
 </form>

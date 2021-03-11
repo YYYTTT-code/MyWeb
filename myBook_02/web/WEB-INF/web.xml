@@ -19,4 +19,13 @@
         <servlet-name>RegistServlet</servlet-name>
         <url-pattern>/regist</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>learnFilter</filter-name>
+        <filter-class>com.atguigu.filter.LearnFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>learnFilter</filter-name>
+        <url-pattern>/pages/learnJsp/b.jsp</url-pattern>
+    </filter-mapping>
 </web-app>
